@@ -145,8 +145,8 @@ def setup_fedora(dev):
     as_root(["dnf", "update"])
     as_root(["dnf", "install", "-y", "--skip-unavailable", *DNF_PACKAGES])
     if not shutil.which("java"):
-        print("Java not found. Installing java-17-openjdk-headless")
-        as_root(["dnf", "install", "-y", "java-17-openjdk-headless"])
+        print("Java not found. Installing java-openjdk-headless")
+        as_root(["dnf", "install", "-y", "java-openjdk-headless"])
     make_venv("python3", dev)
 
 

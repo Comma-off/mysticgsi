@@ -142,7 +142,7 @@ def setup_windows(dev):
 
 def setup_fedora(dev):
     print("Installing dnf packages")
-    as_root(["dnf", "update"])
+    as_root(["dnf", "update", "-y"])
     as_root(["dnf", "install", "-y", "--skip-unavailable", *DNF_PACKAGES])
     if not shutil.which("java"):
         print("Java not found. Installing java-openjdk-headless")

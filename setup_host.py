@@ -58,7 +58,7 @@ DNF_PACKAGES = [
     "patch",
     "ca-certificates",
     "libarchive",
-    "java-17-openjdk-headless"
+    "java-openjdk-headless"
 ]
 
 

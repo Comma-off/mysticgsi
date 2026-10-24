@@ -102,7 +102,7 @@ python -m venv .venv
 ```sh
 sudo dnf update -y
 sudo dnf install -y --skip-unavailable python3 python3-pip curl aria2 openssl patch \
-    ca-certificates libarchives java-openjdk-headless
+    ca-certificates libarchive java-openjdk-headless
 python -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
